@@ -22,10 +22,10 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value="/admin")
 public class adminController {
     @Autowired
-    ticketService temp;
+    ticketServiceImplementation temp;
 
     @ResponseBody
-    @RequestMapping(value="",method=RequestMethod.POST)
+    @RequestMapping(value="/finance",method=RequestMethod.POST)
     public ModelAndView report(){
         ModelAndView model = new ModelAndView("admin");
         List<RevenueData> revenuelist = temp.getRevenueByStationAndMonth();
