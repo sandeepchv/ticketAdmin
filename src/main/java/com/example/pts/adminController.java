@@ -27,8 +27,8 @@ public class adminController {
     ticketService temp;
 
     @ResponseBody
-//    @RequestMapping(value="",method=RequestMethod.POST)
-    @RequestMapping("/viewRecords")
+    @RequestMapping(value="",method=RequestMethod.POST)
+//    @RequestMapping("/viewRecords")
     public ModelAndView report(){
         System.out.println("creating model");
         ModelAndView model = new ModelAndView("admin");
